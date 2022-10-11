@@ -1,13 +1,76 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.App{
+    gap:20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: gray;
+    min-height:300px;
+    width:400px;
+    padding:20px;
+    color:black
+}
+.section{
+    display:flex;
+    padding:5px;
+    justify-content: space-between;
+    align-items: center;
+    border:1px solid black;
+    background-color: white;
+    width:350px;
+}
+.search-icon{
+    width:20px;
+    height:20px;
+}
+input{
+    border:none;
+    width:300px;
+}
+input:focus{
+    outline: none;
+}
+button{
+    border: none;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.words{
+    display:flex;
+    min-width:330px;
+    padding:20px;
+    border-radius: 3px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: white;
+    flex-direction: column;
+    justify-content: center;
+    gap:10px;
+}
+.word{
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap:10px;
+}
+hr{
+    margin-bottom: 8px;
+}
+.speech{
+    text-align: center;
+    border:1px solid black;
+    padding:2px;
+    min-height:35px;
+    min-width:90px;
+    border-radius: 30px;
+    align-self: flex-start;
 }
